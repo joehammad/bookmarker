@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header-text">
+            <h2 class="m-4">bookmarker</h2>
+        </div>
+        
+        <div class="box input-group-sm">
+            
+            <h4>Bookmark your favorite sites</h4>
+            <label for="name" class="m-2">Site name:</label>
+            <input type="text" class="form-control w-75 m-auto " placeholder="bookmarker name" aria-describedby="basic-addon1" id="siteName">
+            <label for="url" class="m-2">Site Url:</label>
+            <input type="text" class="form-control w-75 m-auto " pattern="^(http|https):// " placeholder="website Url" aria-describedby="basic-addon1" id="siteUrl"> 
+            <div class="m-4">
+            <button onclick="addSite()" type="button" class="btn btn-outline-primary" >submit</button>
+            </div>
+        </div>
+        <div id="site">
+
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
